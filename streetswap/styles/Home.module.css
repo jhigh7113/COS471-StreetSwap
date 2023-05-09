@@ -36,14 +36,20 @@
 
 .connect {
   margin-bottom: 2rem;
+  margin-top: 4rem;
   width: 230px;
+  height: 100px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .description {
   margin-top: 3rem;
   margin-bottom: 2rem;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 5rem;
 }
 
 .code {
@@ -96,8 +102,10 @@
 }
 
 .logo {
-  height: 1em;
   margin-left: 0.5rem;
+  
+	top:50px; 
+	left:10;
 }
 
 @media (max-width: 600px) {
@@ -115,5 +123,23 @@
   background: #111;
 }
 .logo img {
-  filter: invert(1);
+  /* filter: invert(1);*/
+}
+
+.Web3Button {
+  
+  display:flex;
+  height:100px !important;
+  width:150px;
+  justify-content:center;
+  align-items:center;
+
+}
+
+.step { 
+  margin-top: 200px;
+  padding: 10px; 
+  flex-direction: row;
+  align-self: center;
+	
 }
