@@ -1,6 +1,8 @@
 import { Text, ConnectWallet, Web3Button, useAddress} from "@thirdweb-dev/react";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk/evm";
 import styles from "../styles/Home.module.css";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 export default function Home() {
@@ -27,8 +29,8 @@ export default function Home() {
             action={ async (contract) => {
               await contract.call("claim", ["0xEBDCA75b749178DbE751b9D51fEAD789751492Cb", 0, 1])
             }}
-            onSuccess={(result) => alert("Success!")}
-            onError={(result) => alert("Failed To Redeem Ticket")}
+            onSuccess={(result) => alert("Your Ticket!")}
+            onError={(result) => alert("You do not have a valid ticket")}
           >
             Claim Ticket
           </Web3Button>
