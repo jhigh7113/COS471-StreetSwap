@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@thirdweb-dev/contracts/base/ERC1155LazyMint.sol";
 
-contract MyContract is ERC1155LazyMint {
+contract ClaimContract is ERC1155LazyMint {
     ERC1155LazyMint public accessKeysCollection;
     constructor(
         string memory _name,
